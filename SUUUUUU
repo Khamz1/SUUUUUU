@@ -1,0 +1,42 @@
+const ronaldo = {
+    goals: 5,
+    nastroeniye: 5,
+    messiGoal: 2,
+    propuskalZanyatiya:false,
+    scream: {
+        loudScream: "SUUUUUU",
+        silentScream: "suuu"
+    },
+    che_tam_po_ronaldo: function () {
+        console.log(this.goals,
+                    this.nastroeniye,
+                    this.messiGoal,
+            this.propuskalZanyatiya,
+                    this.scream.loudScream,
+            this.scream.silentScream)
+    },
+  
+    shooooooot_goal: function () {
+        this.goals++
+      this.nastroeniye +=5
+    },
+  
+    Garantiya: function () {
+      if(this.propuskalZanyatiya==true){
+        console.log("Гаранти яьгга")
+      }
+      else{ console.log("Гарантия exist")}
+        
+    },
+  messiShootGoal: function() {
+    this.messiGoal++
+    this.nastroeniye--
+  },
+
+  // Prosti esli
+  horosh:function(){
+    if(this.nastroeniye>3){console.log(this.scream.loudScream)}
+    else{console.log(this.scream.silentScream)}
+  }
+
+}
